@@ -1,0 +1,22 @@
+Revenue
+
+R&D
+Marketing
+Payroll
+Infrastructure
+G&A
+Example formulas:
+R&D
+=Revenue*10%
+
+Marketing
+=Revenue*7%
+
+Payroll
+=Revenue*7%
+
+Infrastructure
+=Revenue*4%
+
+G&A
+=Revenue*2%
