@@ -1,0 +1,124 @@
+A1: ASSUMPTIONS
+
+A3: Discount Rate
+B3: 12%
+
+A4: Terminal Growth
+B4: 4%
+
+A5: Revenue Growth Driver
+
+A7: Year
+B7: Y1
+C7: Y2
+D7: Y3
+E7: Y4
+F7: Y5
+G7: Y6
+H7: Y7
+I7: Y8
+J7: Y9
+K7: Y10
+
+A8: Revenue
+B8: 2
+C8: 12
+D8: 50
+E8: 220
+F8: 828
+G8: 1350
+H8: 2050
+I8: 3100
+J8: 4250
+K8: 5400
+
+A10: R&D % Revenue
+B10: 100%
+C10: 50%
+D10: 20%
+E10: 11%
+F10: 10%
+G10: 9%
+H10: 9%
+I10: 8%
+J10: 7%
+K10: 6%
+
+A11: Marketing % Revenue
+B11: 50%
+C11: 33%
+D11: 14%
+E11: 9%
+F11: 7%
+G11: 9%
+H11: 11%
+I11: 11%
+J11: 10%
+K11: 9%
+
+A12: Payroll % Revenue
+B12: 100%
+C12: 42%
+D12: 36%
+E12: 16%
+F12: 7%
+G12: 8%
+H12: 9%
+I12: 8%
+J12: 8%
+K12: 7%
+
+A13: Infrastructure % Revenue
+B13: 25%
+C13: 8%
+D13: 6%
+E13: 5%
+F13: 4%
+G13: 4%
+H13: 5%
+I13: 6%
+J13: 5%
+K13: 5%
+
+A14: G&A % Revenue
+B14: 25%
+C14: 8%
+D14: 4%
+E14: 3%
+F14: 2%
+G14: 3%
+H14: 3%
+I14: 3%
+J14: 3%
+K14: 3%
+
+A16: Tax Rate
+B16: 0%
+C16: 0%
+D16: 15%
+E16: 15%
+F16: 15%
+G16: 22%
+H16: 22%
+I16: 22%
+J16: 22%
+K16: 22%
+
+A17: NWC % Revenue
+B17: 5%
+K17: 5%
+
+A18: Capex % Revenue
+B18: 100%
+C18: 42%
+D18: 20%
+E18: 11%
+F18: 9%
+G18: 8%
+H18: 7%
+I18: 6%
+J18: 6%
+K18: 6%
+
+A19: Depreciation % Capex
+B19: 40%
