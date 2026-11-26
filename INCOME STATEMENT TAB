@@ -1,0 +1,38 @@
+A1: INCOME STATEMENT
+
+A3: Revenue
+B3: =Assumptions!B8
+Copy across
+
+A5: R&D
+B5: =B3*Assumptions!B10
+
+A6: Marketing
+B6: =B3*Assumptions!B11
+
+A7: Payroll
+B7: =B3*Assumptions!B12
+
+A8: Infrastructure
+B8: =B3*Assumptions!B13
+
+A9: G&A
+B9: =B3*Assumptions!B14
+
+A11: Total Operating Expense
+B11: =SUM(B5:B9)
+
+A13: EBITDA
+B13: =B3-B11
+
+A15: Depreciation
+B15: ='Cash Flow'!B11
+
+A17: EBIT
+B17: =B13-B15
+
+A19: Taxes
+B19: =IF(B17>0,B17*Assumptions!B16,0)
+
+A21: Net Income
+B21: =B17-B19
