@@ -1,0 +1,189 @@
+# CVEN DCF Sensitivity Table
+## Enterprise Value Sensitivity to WACC and Terminal Growth Rate
+
+Using the revised CVEN assumptions:
+
+- Year 10 UFCF = **$2.63B**
+- Base WACC = **12%**
+- Base Terminal Growth = **4%**
+- Base Enterprise Value ≈ **$18B-$20B**
+
+This sensitivity analysis shows how valuation changes when assumptions change.
+
+---
+
+## Excel Formula
+
+Assume:
+
+```excel
+Terminal Value =
+FCF10*(1+g)/(WACC-g)
+```
+
+where:
+
+- FCF10 = 2,632.5
+- g = Terminal Growth
+- WACC = Discount Rate
+
+---
+
+## Enterprise Value Sensitivity Matrix ($ Billions)
+
+| Terminal Growth → | 2% | 3% | 4% | 5% | 6% |
+|------------------|------:|------:|------:|------:|------:|
+| **WACC 9%** | 29.6 | 34.8 | 41.8 | 51.8 | 67.2 |
+| **WACC 10%** | 24.9 | 28.8 | 33.9 | 41.0 | 51.2 |
+| **WACC 11%** | 21.4 | 24.4 | 28.3 | 33.5 | 40.7 |
+| **WACC 12%** | 18.7 | 21.0 | 24.0 | 27.9 | 33.1 |
+| **WACC 13%** | 16.6 | 18.5 | 20.9 | 23.9 | 28.0 |
+| **WACC 14%** | 14.9 | 16.4 | 18.4 | 21.0 | 24.3 |
+| **WACC 15%** | 13.5 | 14.8 | 16.4 | 18.5 | 21.3 |
+
+---
+
+## Excel Data Table Setup
+
+Create this structure:
+
+```text
+        B       C       D       E       F
+4      2%      3%      4%      5%      6%
+
+5      9%
+6     10%
+7     11%
+8     12%
+9     13%
+10    14%
+11    15%
+```
+
+In cell:
+
+```excel
+B4
+```
+
+place link to Enterprise Value output:
+
+```excel
+=DCF!B22
+```
+
+Then:
+
+1. Highlight the entire sensitivity grid.
+2. Select Data → What-If Analysis → Data Table.
+3. Row Input Cell = Terminal Growth assumption.
+4. Column Input Cell = WACC assumption.
+
+Excel automatically generates all values.
+
+---
+
+# Tornado Analysis
+
+### Biggest Value Drivers
+
+| Driver | Impact |
+|----------|----------:|
+| Revenue CAGR | Very High |
+| Terminal Growth | Very High |
+| WACC | Very High |
+| EBITDA Margin | High |
+| User Growth | High |
+| Tax Rate | Medium |
+| Working Capital | Medium |
+| CAPEX Efficiency | Medium |
+
+---
+
+# VC Scenario Analysis
+
+### Bear Case
+
+Assumptions:
+
+```text
+Revenue Year 10 = $3B
+WACC = 15%
+Growth = 2%
+```
+
+Estimated EV:
+
+```text
+$8B-$12B
+```
+
+---
+
+### Base Case
+
+Assumptions:
+
+```text
+Revenue Year 10 = $5.4B
+WACC = 12%
+Growth = 4%
+```
+
+Estimated EV:
+
+```text
+$18B-$24B
+```
+
+---
+
+### Bull Case
+
+Assumptions:
+
+```text
+Revenue Year 10 = $8B
+WACC = 10%
+Growth = 5%
+```
+
+Estimated EV:
+
+```text
+$45B-$70B
+```
+
+---
+
+### Global Adoption Case
+
+Assumptions:
+
+```text
+Revenue Year 10 = $15B
+FCF Margin = 50%
+WACC = 9%
+Growth = 6%
+```
+
+Estimated EV:
+
+```text
+$120B-$250B+
+```
+
+---
+
+## Investment-Banker Presentation Output
+
+For your pitch deck, present the valuation range as:
+
+```text
+Bear Case:        $10B
+Base Case:        $22B
+Bull Case:        $60B
+Strategic Upside: $150B+
+```
+
+This gives investors a realistic downside, defendable base case, and venture-scale upside for CVEN.
