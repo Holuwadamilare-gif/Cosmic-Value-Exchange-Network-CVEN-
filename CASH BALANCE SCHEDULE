@@ -1,0 +1,27 @@
+A1: CASH BALANCE
+
+A3: Beginning Cash
+B3: 0
+
+A4: Funding Raised
+B4: =Funding!B3
+
+A5: Free Cash Flow
+B5: ='Cash Flow'!B15
+
+A7: Ending Cash
+
+B7:
+=B3+B4+B5
+
+C3:
+=B7
+
+C4:
+=Funding!C4
+
+C5:
+='Cash Flow'!C15
+
+C7:
+=C3+C4+C5
