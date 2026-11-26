@@ -1,0 +1,18 @@
+A1: FUNDING
+
+A3: Seed Round
+B3: 5
+
+A4: Series A
+C4: 25
+
+A5: Series B
+E5: 100
+
+A6: Series C
+G6: 500
+
+A8: Total Funding
+
+B8:
+=SUM(B3:K6)
