@@ -1,0 +1,24 @@
+A1: CASH FLOW
+
+A3: EBITDA
+B3: =Income!B13
+
+A5: Taxes Paid
+B5: =Income!B19
+
+A7: NOPAT
+B7: =Income!B17-B5
+
+A9: Capex
+B9: =Income!B3*Assumptions!B18
+
+A11: Depreciation
+B11: =B9*Assumptions!B19
+
+A13: Change NWC
+B13: ='Working Capital'!B7
+
+A15: Unlevered Free Cash Flow
+
+B15:
+=B7+B11-B9-B13
