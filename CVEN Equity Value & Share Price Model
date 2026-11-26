@@ -1,0 +1,297 @@
+# CVEN Equity Value & Share Price Model
+
+To move from **Enterprise Value (EV)** to **Equity Value** and ultimately a **share price**, use the standard valuation framework:
+
+```text
+Enterprise Value
++ Cash
+- Debt
+= Equity Value
+```
+
+---
+
+# Capital Structure Assumptions
+
+### Year 10
+
+| Item | $ Billions |
+|--------|--------:|
+| Enterprise Value | 24.0 |
+| Cash Balance | 11.1 |
+| Debt | 1.0 |
+| Equity Value | 34.1 |
+
+Formula:
+
+```text
+24.0
++11.1
+-1.0
+=
+34.1 Billion
+```
+
+---
+
+# Fully Diluted Share Count
+
+Assume the company is structured as follows:
+
+| Security Type | Shares (Millions) |
+|--------------|------------------:|
+| Founders | 600 |
+| Employees/ESOP | 150 |
+| Seed Investors | 75 |
+| Series A | 75 |
+| Series B | 60 |
+| Series C | 40 |
+
+Total Fully Diluted Shares:
+
+```text
+1,000 Million Shares
+```
+
+or
+
+```text
+1.0 Billion Shares
+```
+
+---
+
+# Base Case Share Price
+
+```text
+Equity Value
+÷
+Diluted Shares
+=
+Share Price
+```
+
+Calculation:
+
+```text
+$34.1 Billion
+÷
+1.0 Billion
+=
+$34.10/share
+```
+
+---
+
+# Sensitivity Analysis
+
+## Share Price Matrix ($ per Share)
+
+| Growth ↓ / WACC → | 9% | 10% | 11% | 12% | 13% | 14% | 15% |
+|-------------------|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
+| 2% | 39 | 34 | 30 | 27 | 25 | 23 | 21 |
+| 3% | 44 | 38 | 34 | 30 | 27 | 25 | 23 |
+| 4% | 51 | 44 | 38 | 34 | 30 | 27 | 25 |
+| 5% | 61 | 51 | 44 | 38 | 34 | 30 | 27 |
+| 6% | 77 | 61 | 50 | 44 | 38 | 34 | 30 |
+
+---
+
+# Scenario Valuation Framework
+
+## Bear Case
+
+Assumptions:
+
+```text
+EV = $10B
+Cash = $5B
+Debt = $1B
+```
+
+Equity Value:
+
+```text
+$14B
+```
+
+Share Price:
+
+```text
+$14/share
+```
+
+---
+
+## Base Case
+
+Assumptions:
+
+```text
+EV = $24B
+Cash = $11.1B
+Debt = $1B
+```
+
+Equity Value:
+
+```text
+$34.1B
+```
+
+Share Price:
+
+```text
+$34.10/share
+```
+
+---
+
+## Bull Case
+
+Assumptions:
+
+```text
+EV = $60B
+Cash = $15B
+Debt = $2B
+```
+
+Equity Value:
+
+```text
+$73B
+```
+
+Share Price:
+
+```text
+$73/share
+```
+
+---
+
+## Global Adoption Case
+
+If CVEN becomes:
+
+- the world's primary innovation exchange,
+- a government forecasting platform,
+- a sustainability verification network,
+- and the financial infrastructure for future space-development projects,
+
+then:
+
+```text
+EV = $150B
+Cash = $25B
+Debt = $5B
+```
+
+Equity Value:
+
+```text
+$170B
+```
+
+Share Price:
+
+```text
+$170/share
+```
+
+---
+
+# Founder Ownership Analysis
+
+Assume founders own:
+
+```text
+60%
+```
+
+after all financing rounds.
+
+With 1 billion diluted shares:
+
+```text
+600 million founder shares
+```
+
+### Founder Wealth by Scenario
+
+| Scenario | Share Price | Founder Stake Value |
+|-----------|-----------:|-------------------:|
+| Bear | $14 | $8.4B |
+| Base | $34.10 | $20.5B |
+| Bull | $73 | $43.8B |
+| Global Adoption | $170 | $102B |
+
+---
+
+# IPO Model
+
+Assume IPO at Year 8:
+
+| Metric | Value |
+|----------|---------:|
+| Revenue | $3.1B |
+| EBITDA | $2.0B |
+| UFCF | $1.3B |
+| EV/Revenue | 12x |
+| Enterprise Value | $37.2B |
+
+With:
+
+```text
+Cash = $5B
+Debt = $1B
+```
+
+Equity Value:
+
+```text
+$41.2B
+```
+
+Per-share IPO Price:
+
+```text
+$41.20
+```
+
+---
+
+# Excel Formulas
+
+**Enterprise Value**
+
+```excel
+=SUM(PV_FCF)+PV_Terminal
+```
+
+**Equity Value**
+
+```excel
+=EnterpriseValue+Cash-Debt
+```
+
+**Diluted Shares**
+
+```excel
+=FounderShares+ESOP+InvestorShares
+```
+
+**Share Price**
+
+```excel
+=EquityValue/DilutedShares
+```
+
+**Founder Net Worth**
+
+```excel
+=FounderShares*SharePrice
+```
+
+This gives CVEN a modeled valuation range of roughly **$14/share to $170/share**, with a **base-case value around $34/share** and a potential **equity value exceeding $170 billion** under a highly successful global adoption scenario.
