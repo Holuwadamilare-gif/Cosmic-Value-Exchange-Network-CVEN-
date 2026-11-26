@@ -1,0 +1,14 @@
+=DCF!EV
+Add Net Cash
+=-NetDebt
+Equity Value
+=EnterpriseValue-NetDebt
+EV = 24B
+
+Cash = 11.1B
+
+Debt = 1.0B
+
+Net Debt = -10.1B
+
+Equity Value = 34.1B
