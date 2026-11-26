@@ -1,0 +1,47 @@
+A1: DCF VALUATION
+
+A3: Year
+A4: 1
+A5: 2
+...
+A13: 10
+
+B3: UFCF
+
+B4:
+='Cash Flow'!B15
+
+Copy down
+
+C3: Discount Factor
+
+C4:
+=1/(1+$B$16)^A4
+
+Copy down
+
+D3: Present Value
+
+D4:
+=B4*C4
+
+Copy down
+
+B16: 12%
+
+A18: Terminal Value
+
+B18:
+=(B13*(1+$B$17))/($B$16-$B$17)
+
+B17: 4%
+
+A20: PV Terminal
+
+B20:
+=B18*C13
+
+A22: Enterprise Value
+
+B22:
+=SUM(D4:D13)+B20
