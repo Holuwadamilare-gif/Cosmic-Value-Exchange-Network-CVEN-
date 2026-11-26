@@ -1,0 +1,324 @@
+# CVEN Financial Model Extension
+## Working Capital, Taxes, and Levered Free Cash Flow
+
+Adding working capital and taxes makes the model investor-grade and closer to what venture capital, private equity, sovereign wealth funds, and IPO investors would expect.
+
+---
+
+# Working Capital Assumptions
+
+Because CVEN is primarily a software, marketplace, and analytics platform, working capital needs are lower than manufacturing businesses.
+
+### Components
+
+**Accounts Receivable (AR)**
+
+- Government clients: 60-120 days
+- Enterprise clients: 30-60 days
+
+Assume:
+
+```text
+AR = 12% of payments:
+
+- Cloud providers
+- Consultants
+- Marketing agencies
+
+Assume:
+
+```text
+AP = 5% of Revenue
+```
+
+---
+
+**Deferred Revenue**
+
+Subscription payments received in advance.
+
+Assume:
+
+```text
+Deferred Revenue = 8% of Revenue
+```
+
+---
+
+### Net Working Capital Formula
+
+```text
+NWC =
+Accounts Receivable
+- Accounts Payable
+- Deferred Revenue
+```
+
+---
+
+### Simplified Assumption
+
+Net Working Capital:
+
+```text
+NWC = 5% of Revenue
+```
+
+---
+
+# Working Capital Schedule
+
+| Year | Revenue | NWC (5%) | Annual Change |
+|--------|---------:|---------:|---------:|
+| 1 | 2 | 0.1 | 0.1 |
+| 2 | 12 | 0.6 | 0.5 |
+| 3 | 50 | 2.5 | 1.9 |
+| 4 | 220 | 11.0 | 8.5 |
+| 5 | 828 | 41.4 | 30.4 |
+| 6 | 1,350 | 67.5 | 26.1 |
+| 7 | 2,050 | 102.5 | 35.0 |
+| 8 | 3,100 | 155.0 | 52.5 |
+| 9 | 4,250 | 212.5 | 57.5 |
+| 10 | 5,400 | 270.0 | 57.5 |
+
+---
+
+# Tax Assumptions
+
+Since CVEN would likely operate globally:
+
+### Years 1-2
+
+Losses carried forward.
+
+```text
+Tax Rate = 0%
+```
+
+---
+
+### Years 3-5
+
+Tax incentives
+
+R&D credits
+
+Innovation grants
+
+Effective tax rate:
+
+```text
+15%
+```
+
+---
+
+### Years 6-10
+
+Mature multinational company:
+
+Effective tax rate:
+
+```text
+22%
+```
+
+---
+
+# EBIT Calculation
+
+Assume annual depreciation equals roughly:
+
+```text
+40% of CAPEX
+```
+
+---
+
+## Example Year 10
+
+Revenue
+
+```text
+$5.4B
+```
+
+EBITDA
+
+```text
+$3.8B
+```
+
+Depreciation
+
+```text
+$120M
+```
+
+EBIT
+
+```text
+$3.68B
+```
+
+Tax @22%
+
+```text
+$810M
+```
+
+Net Operating Profit After Tax (NOPAT)
+
+```text
+$2.87B
+```
+
+---
+
+# Full Unlevered Free Cash Flow Schedule
+
+### Formula
+
+```text
+UFCF =
+EBIT
+- Taxes
++ Depreciation
+- CAPEX
+- Change in NWC
+```
+
+---
+
+| Year | EBIT | Tax | Depreciation | CAPEX | NWC Change | UFCF |
+|-------|-------:|-------:|-------:|-------:|-------:|-------:|
+| 1 | -4 | 0 | 1 | 2 | 0.1 | -5.1 |
+| 2 | -5 | 0 | 2 | 5 | 0.5 | -8.5 |
+| 3 | 6 | 0.9 | 4 | 10 | 1.9 | -2.8 |
+| 4 | 113 | 17 | 10 | 25 | 8.5 | 72.5 |
+| 5 | 548 | 82 | 30 | 75 | 30.4 | 390.6 |
+| 6 | 868 | 191 | 44 | 110 | 26.1 | 584.9 |
+| 7 | 1,245 | 274 | 60 | 150 | 35.0 | 846.0 |
+| 8 | 1,923 | 423 | 80 | 200 | 52.5 | 1,327.5 |
+| 9 | 2,771 | 610 | 100 | 250 | 57.5 | 1,953.5 |
+| 10 | 3,680 | 810 | 120 | 300 | 57.5 | 2,632.5 |
+
+---
+
+# Cumulative Free Cash Flow
+
+| Year | UFCF |
+|--------|--------:|
+| 1 | -5.1 |
+| 2 | -8.5 |
+| 3 | -2.8 |
+| 4 | 72.5 |
+| 5 | 390.6 |
+| 6 | 584.9 |
+| 7 | 846.0 |
+| 8 | 1,327.5 |
+| 9 | 1,953.5 |
+| 10 | 2,632.5 |
+
+### Total 10-Year Cash Generation
+
+```text
+≈ $7.8 Billion
+```
+
+---
+
+# Revised DCF Valuation
+
+Assumptions:
+
+```text
+Discount Rate = 12%
+Terminal Growth = 4%
+```
+
+### Terminal Value
+
+```text
+TV =
+2.6325B × 1.04
+----------------
+(12%-4%)
+
+=
+$34.2 Billion
+```
+
+---
+
+### Present Value Estimate
+
+PV of 10-year cash flows:
+
+```text
+≈ $4.8 Billion
+```
+
+PV of terminal value:
+
+```text
+≈ $11-15 Billion
+```
+
+---
+
+### Enterprise Value
+
+**Base Case**
+
+```text
+$16B-$20B
+```
+
+**Growth Case**
+
+```text
+$35B-$50B
+```
+
+**Global Adoption Case**
+
+```text
+$100B+
+```
+
+---
+
+# Additional Investor Metrics
+
+### Year 10 EBITDA Margin
+
+```text
+70%
+```
+
+### Year 10 UFCF Margin
+
+```text
+49%
+```
+
+### Revenue CAGR (Years 1-10)
+
+```text
+≈ 122%
+```
+
+### Cash Conversion
+
+```text
+UFCF / EBITDA
+=
+69%
+```
+
+---
+
+## Strategic Insight
+
+After incorporating taxes and working capital, CVEN remains highly attractive because the business is asset-light, subscription-driven, and AI-powered. Most of the value comes from recurring software revenue, government analytics contracts, marketplace fees, and the AI Growth Intelligence platform, resulting in strong free cash flow generation once scale is reached.
