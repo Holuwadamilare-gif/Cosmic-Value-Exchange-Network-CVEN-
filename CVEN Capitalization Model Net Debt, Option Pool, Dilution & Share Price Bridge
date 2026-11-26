@@ -1,0 +1,392 @@
+# CVEN Capitalization Model
+## Net Debt, Option Pool, Dilution & Share Price Bridge
+
+This section upgrades the model to institutional-investor quality by incorporating:
+
+- Net Debt
+- Future Option Pool Expansion
+- Fully Diluted Shares Outstanding
+- Treasury Stock Method
+- Equity Value Per Share
+
+---
+
+# Net Debt Schedule
+
+Formula:
+
+```text
+Net Debt = Total Debt - Cash
+```
+
+When cash exceeds debt, the company has:
+
+```text
+Net Cash
+```
+
+rather than net debt.
+
+---
+
+## Projected Balance Sheet Position
+
+| Year | Cash ($B) | Debt ($B) | Net Debt ($B) |
+|--------|--------:|--------:|--------:|
+| 1 | 0.6 | 0.0 | -0.6 |
+| 2 | 0.6 | 0.5 | -0.1 |
+| 3 | 0.6 | 1.0 | 0.4 |
+| 4 | 0.7 | 1.5 | 0.8 |
+| 5 | 1.2 | 1.8 | 0.6 |
+| 6 | 2.0 | 2.0 | 0.0 |
+| 7 | 3.2 | 1.8 | -1.4 |
+| 8 | 5.0 | 1.5 | -3.5 |
+| 9 | 7.6 | 1.2 | -6.4 |
+| 10 | 11.1 | 1.0 | -10.1 |
+
+---
+
+# Enterprise Value to Equity Value
+
+### Standard Formula
+
+```text
+Equity Value
+=
+Enterprise Value
+- Net Debt
+```
+
+or
+
+```text
+Equity Value
+=
+Enterprise Value
++ Net Cash
+```
+
+---
+
+## Year 10 Example
+
+```text
+Enterprise Value
+=
+$24.0B
+```
+
+Net Debt
+
+```text
+=
+- $10.1B
+```
+
+Therefore:
+
+```text
+Equity Value
+
+=
+24.0 + 10.1
+
+=
+$34.1B
+```
+
+---
+
+# Option Pool Assumptions
+
+High-growth technology companies typically reserve equity for:
+
+- Executives
+- Engineers
+- Scientists
+- AI Researchers
+- Country Managers
+
+---
+
+## Pre-IPO Option Pool
+
+| Group | Ownership |
+|---------|---------:|
+| Founders | 55.0% |
+| Investors | 30.0% |
+| ESOP Pool | 15.0% |
+
+---
+
+# Share Count Assumptions
+
+## Initial Capitalization
+
+| Security | Shares (M) |
+|-----------|-----------:|
+| Founders | 600 |
+| Seed Investors | 100 |
+| Series A | 100 |
+| Series B | 80 |
+| Series C | 70 |
+
+Basic Shares:
+
+```text
+950M
+```
+
+---
+
+# Employee Option Pool
+
+Target Pool:
+
+```text
+15%
+```
+
+Required Shares:
+
+```text
+168M
+```
+
+Total Fully Diluted Shares:
+
+```text
+1,118M
+```
+
+---
+
+# Treasury Stock Method
+
+Assume options outstanding:
+
+| Category | Options (M) |
+|------------|-----------:|
+| Employee Grants | 100 |
+| Executive Grants | 30 |
+| Future Awards | 38 |
+
+Total:
+
+```text
+168M
+```
+
+Average Strike Price:
+
+```text
+$12
+```
+
+Assumed Share Price:
+
+```text
+$34.10
+```
+
+---
+
+### Incremental Shares
+
+Treasury Stock Formula:
+
+```text
+Incremental Shares
+
+=
+Options ×
+(Share Price - Strike Price)
+÷ Share Price
+```
+
+Calculation:
+
+```text
+168 ×
+(34.1-12)
+÷34.1
+
+=
+109M
+```
+
+---
+
+## Diluted Share Count
+
+| Item | Shares (M) |
+|--------|---------:|
+| Basic Shares | 950 |
+| Incremental Option Shares | 109 |
+
+Fully Diluted Shares:
+
+```text
+1,059M
+```
+
+---
+
+# Revised Share Price
+
+Using Treasury Stock Method:
+
+```text
+Equity Value
+
+=
+$34.1B
+```
+
+Divided by:
+
+```text
+1.059B shares
+```
+
+Result:
+
+```text
+$32.20/share
+```
+
+---
+
+# Ownership Waterfall
+
+## Fully Diluted Ownership
+
+| Shareholder | Shares (M) | % Ownership |
+|------------|----------:|----------:|
+| Founders | 600 | 56.7% |
+| Seed Investors | 100 | 9.4% |
+| Series A | 100 | 9.4% |
+| Series B | 80 | 7.6% |
+| Series C | 70 | 6.6% |
+| Employee Pool | 109 | 10.3% |
+
+Total:
+
+```text
+1.059 Billion Shares
+```
+
+---
+
+# Founder Wealth Analysis
+
+### Base Case
+
+Founder Shares:
+
+```text
+600 million
+```
+
+Share Price:
+
+```text
+$32.20
+```
+
+Founder Equity Value:
+
+```text
+600M × $32.20
+
+=
+$19.3B
+```
+
+---
+
+# IPO Scenario
+
+Assume IPO EV:
+
+```text
+$41B
+```
+
+Net Cash:
+
+```text
+$4B
+```
+
+Equity Value:
+
+```text
+$45B
+```
+
+Diluted Shares:
+
+```text
+1.10B
+```
+
+IPO Price:
+
+```text
+$40.90/share
+```
+
+---
+
+# Excel Formulas
+
+### Net Debt
+
+```excel
+=Debt-Cash
+```
+
+### Equity Value
+
+```excel
+=EnterpriseValue-NetDebt
+```
+
+### Treasury Stock Method
+
+```excel
+=Options*(CurrentSharePrice-StrikePrice)/CurrentSharePrice
+```
+
+### Diluted Shares
+
+```excel
+=BasicShares+IncrementalShares
+```
+
+### Share Price
+
+```excel
+=EquityValue/DilutedShares
+```
+
+### Founder Ownership %
+
+```excel
+=FounderShares/DilutedShares
+```
+
+---
+
+# Institutional Valuation Range
+
+| Scenario | EV ($B) | Equity Value ($B) | Diluted Share Price |
+|-----------|----------:|----------:|----------:|
+| Bear | 10 | 15 | $14.20 |
+| Base | 24 | 34 | $32.20 |
+| Bull | 60 | 73 | $68.90 |
+| Strategic | 150 | 170 | $160.50 |
+| Universal Adoption | 250+ | 280+ | $260+ |
+
+This capital structure allows CVEN to maintain a substantial employee incentive pool while still preserving majority founder control and supporting multiple financing rounds before IPO.
