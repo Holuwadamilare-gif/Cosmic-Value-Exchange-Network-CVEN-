@@ -1,0 +1,8 @@
+=BasicShares*15%
+142,500,000 Options
+Treasury Stock Method
+Share Price = Dynamic
+Strike = $12
+Options = 142.5M
+Incremental Shares
+=Options*(SharePrice-StrikePrice)/SharePrice
