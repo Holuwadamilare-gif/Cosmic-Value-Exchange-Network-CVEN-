@@ -1,0 +1,12 @@
+A1: WORKING CAPITAL
+
+A3: Revenue
+B3: =Income!B3
+
+A5: Required NWC
+B5: =B3*Assumptions!B17
+
+A7: Change In NWC
+B7: =B5
+
+C7: =C5-B5
