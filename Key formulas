@@ -1,0 +1,10 @@
+EBITDA Margin = EBITDA / Revenue
+
+Revenue CAGR =
+=(Final Revenue / First Revenue)^(1/9)-1
+
+FCF Margin =
+=FCF / Revenue
+
+Cash Conversion =
+=FCF / EBITDA
