@@ -1,0 +1,14 @@
+=EBITDA-Depreciation
+Taxes
+=MAX(0,EBIT*TaxRate)
+NOPAT
+=EBIT-Taxes
+=NOPAT
++Depreciation
+-Capex
+-ChangeNWC
+UFCF
+=NOPAT
++Depreciation
+-Capex
+-ChangeNWC
