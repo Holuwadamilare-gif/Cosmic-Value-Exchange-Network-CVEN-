@@ -1,0 +1,9 @@
+=1/(1+WACC)^Year
+Present Value
+=UFCF*DiscountFactor
+Terminal Value
+=(FCF10*(1+g))/(WACC-g)
+PV Terminal
+=TerminalValue/(1+WACC)^10
+Enterprise Value
+=SUM(PV_FCF)+PV_Terminal
