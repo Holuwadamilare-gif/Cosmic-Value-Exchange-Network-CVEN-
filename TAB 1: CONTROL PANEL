@@ -1,0 +1,28 @@
+A1: CVEN MASTER ASSUMPTIONS
+
+A3: WACC
+B3: 12%
+
+A4: Terminal Growth Rate
+B4: 4%
+
+A5: Tax Rate Mature
+B5: 22%
+
+A6: NWC % Revenue
+B6: 5%
+
+A7: Depreciation % Capex
+B7: 40%
+
+A8: Option Pool Target
+B8: 15%
+
+A9: IPO Year
+B9: Y8
+
+A10: Exit Year
+B10: Y10
+
+A11: Average Option Strike
+B11: 12.00
